@@ -14,7 +14,6 @@
 		   
 		   <input type="button" value="获取验证码" name="yzm" class="yzm" disabled="disabled">
 		   <br><br>
-
 		   <input type="submit" id="submit" value="提交">
 	 </div>
    </form>

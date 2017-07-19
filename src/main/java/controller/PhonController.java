@@ -87,6 +87,10 @@ public class PhonController {
         HttpSession session=request.getSession();
         session.setAttribute("verification",phone.getVerification());
 		//对验证码进行判断后跳转到相应的界面中
+        System.out.println("phone.getUyzm="+phone.getUyzm()+",session.getAttribute(yzm)="+session.getAttribute("yzm"));
+        if (phone.getUyzm().equals(session.getAttribute("yzm"))){
+            return "success";
+        }
 
 		if(verification!=null&&phone.getVerification().equals(verification.split("\"")[9])){
 
